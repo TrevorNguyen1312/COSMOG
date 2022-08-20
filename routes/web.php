@@ -14,7 +14,6 @@ use App\Http\Controllers\Admin_Page_Controller;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\shopController;
 use App\Http\Controllers\single_productController;
-use App\Http\Controllers\cartController;
 use App\Http\Controllers\loginController;
 
 use App\Http\Controllers\AdminLoginPageController;
@@ -45,7 +44,6 @@ Route::get('/',[indexController::class,'index']);
 Route::get('/index',[indexController::class,'index']);
 Route::get('/shop',[shopController::class,'shop']);
 Route::get('/single_product',[single_productController::class,'single_product']);
-Route::get('/cart',[cartController::class,'cart']);
 Route::get('/login',[loginController::class,'login']);
 Route::get('/information/{id}',[GuestsController::class,'information']);
 
