@@ -47,6 +47,7 @@ Route::get('/shop',[shopController::class,'shop']);
 Route::get('/single_product',[single_productController::class,'single_product']);
 Route::get('/cart',[cartController::class,'cart']);
 Route::get('/login',[loginController::class,'login']);
+Route::get('/information/{id}',[GuestsController::class,'information']);
 
 
 Route::get('guns-List',[ModelGunsController::class,'index']);

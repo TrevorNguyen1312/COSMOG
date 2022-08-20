@@ -38,7 +38,7 @@
                     <div class="user-menu">
                         <ul>
                             <li><a href="{{url('/login')}}"><i class="fa fa-user"></i>Login</a></li>
-                            <li><a href="#"><i class="fa fa-user"></i> Admin Login</a></li>
+                            <li><a href="{{url('adminLogin-Page')}}"><i class="fa fa-user"></i> Admin Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -103,7 +103,6 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.blade.php">Home</a></li>
                         <li><a href="{{url('/shop')}}">Shop page</a></li>
-                        <li><a href="{{url('/checkout')}}">Checkout</a></li>
                     </ul>
                 </div>  
             </div>
