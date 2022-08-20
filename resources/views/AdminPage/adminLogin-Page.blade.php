@@ -47,14 +47,18 @@
                             </a>
                         </div>
                         <div class="login-form">
+                            <form action="{{route('adminSignIn')}}" method="post">
+                                @csrf
                             <form action="" method="post">
                                 <div class="form-group">
                                     <label>Username</label>
                                     <input class="au-input au-input--full" type="username" name="username" placeholder="Username">
+                                    <span class="text-danger">@error('adminUsername') {{$message}} @enderror </span>
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
                                     <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                    <span class="text-danger">@error('adminPassword') {{$message}} @enderror </span>
                                 </div>
                                 <div class="login-checkbox">
                                     <label>

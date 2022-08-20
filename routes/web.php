@@ -82,3 +82,5 @@ Route::get('admin-Page',[Admin_Page_Controller::class,'adminIndex']);
 Route::get('adminLogin-Page',[AdminLoginPageController::class,'adminLoginPageIndex']);
 
 Route::get('adminPie-Page',[ChartController::class,'pieChart']);
+
+Route::post('adminSignIn',[AdminLoginPageController::class,'adminSignIn_Index'])-> name('adminSignIn');
