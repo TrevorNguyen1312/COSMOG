@@ -53,4 +53,7 @@ class GuestsController extends Controller
             return back()->with('fail','This username is not registered.');
         }
     }
+    public function information() {
+        return view('GuestPage/information');
+    }
 }

@@ -51,7 +51,7 @@ Route::get('/register',[registerController::class,'register']);
 
 Route::post('/register-guest',[GuestsController::class,'registerGuest'])->name('register-guest');
 
-Route::get('/information/{id}',[GuestsController::class,'information']);
+Route::get('/information',[GuestsController::class,'information']);
 
 
 Route::get('guns-List',[ModelGunsController::class,'index']);
