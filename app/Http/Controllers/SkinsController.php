@@ -4,17 +4,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\skins;
+use App\Models\rarity;
+use App\Models\guns;
+use App\Models\skin_sets;
+
+
 
 class SkinsController extends Controller
 {
     public function SkinsIndex(){
         $data = skins::get();
-        
         return view('skins-List',compact('data'));
     }
     public function addSkins(){
-        return view('add-Skins');
+        $raritydata = rarity::get();
+        $gundata = guns::get();
+        $skinsetdata = skin_sets::get();
+        return view('add-Skins', compact('raritydata','gundata','skinsetdata'));
     }
+
     public function saveSkins(Request $request){
         $request->validate([
             'skinid'=>'required',

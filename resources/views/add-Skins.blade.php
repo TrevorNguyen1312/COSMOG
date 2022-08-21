@@ -45,14 +45,19 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     </div>
                     <div class="md-3">
                         <label class="form-label">Rarity</label>
-                        <input type="text" class="form-control" name="skinrarity"
-                        placeholder="Enter Rarity"value ="{{old('skinrarity')}}">
+                        <select name="skinrarity" class="form-control">
+                            @foreach ($raritydata as $row)                                
+                                <option value="{{$row->rarityID}}">
+                                {{$row->rarityID}} - {{$row->rarityName}}
+                                </option>
+                            @endforeach
+                        </select>
                         @error('skinrarity')
                             <div class="alert alert-danger" role="alert">
                                 {{$message}}
                             </div>
                         @enderror
-                    </div>
+                    </div> <br>
                     <div class="md-3">
                         <label class="form-label">Price</label>
                         <input type="text" class="form-control" name="skinprice"
@@ -64,10 +69,13 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                         @enderror
                     </div>
                     <div class="md-3">
-                        <label class="form-label">Set</label>
-                        <input type="text" class="form-control" name="skinset"
-                        placeholder="Enter Skin Set" value ="{{old('skinset')}}">
-                        @error('skinset')
+                        <label class="form-label">Skins set</label>
+                        <select name="skinset" class="form-control">
+                            @foreach ($skinsetdata as $row)                                
+                                <option value="{{$row->skinsetName}}">{{$row->skinSetName}}</option>
+                            @endforeach
+                        </select>
+                        @error('skinrarity')
                             <div class="alert alert-danger" role="alert">
                                 {{$message}}
                             </div>
@@ -75,7 +83,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     </div>
                     <div class="md-3">
                         <label class="form-label">Image</label>
-                        <input type="text" class="form-control" name="skinimage"
+                        <input type="file" class="form-control" name="skinimage"
                         placeholder="Enter Image" value ="{{old('skinimage')}}">
                         @error('skinimage')
                             <div class="alert alert-danger" role="alert">
@@ -85,9 +93,12 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     </div>
                     <div class="md-3">
                         <label class="form-label">Gun Type</label>
-                        <input type="text" class="form-control" name="guntype"
-                        placeholder="Enter Gun Type" value ="{{old('guntype')}}">
-                        @error('guntypes')
+                        <select name="guntype" class="form-control">
+                            @foreach ($gundata as $row)                                
+                                <option value="{{$row->gunID}}">{{$row->gunID}} - {{$row->gunName}}</option>
+                            @endforeach
+                        </select>
+                        @error('guntype')
                             <div class="alert alert-danger" role="alert">
                                 {{$message}}
                             </div>
