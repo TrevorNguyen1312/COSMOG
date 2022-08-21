@@ -129,8 +129,12 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="{{url('adminPie-Page')}}">
-                                <i class="fas fa-chart-bar"></i>Charts</a>
+                            <a href="{{url('adminPieSkinSets-Page')}}">
+                                <i class="fas fa-chart-bar"></i>Skin Sets Charts</a>
+                        </li>
+                        <li>
+                            <a href="{{url('adminPieGunType-Page')}}">
+                                <i class="fas fa-chart-bar"></i>Gun Type Charts</a>
                         </li>
                         <li>
                             <a href="{{url('skins-List')}}">

@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 
 class ChartController extends Controller
 {
-    public function adminPieChart(){
-        return view('AdminPage/adminPie-Page');
+    public function adminPieSkinSetsChart(){
+        return view('AdminPage/adminPieSkinSets-Page');
+    }
+
+    public function adminPieGunTypeChart(){
+        return view('AdminPage/adminPieGunType-Page');
     }
 }

@@ -9,15 +9,15 @@
 
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['Prime',     12],
-          ['Reaver',      9],
-          ['Oni',  7],
-          ['Ion', 5],
-          ['Glitchpop',    4]
+          ['VA - Vandal',     3],
+          ['PH - Phantom',      4],
+          ['OP - Operator',  2],
+          ['KN - Knife', 1],
+          ['SH - Sheriff',    1]
         ]);
 
         var options = {
-          title: 'Revenue by Skin Sets'
+          title: 'Revenue by Guns Type'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
