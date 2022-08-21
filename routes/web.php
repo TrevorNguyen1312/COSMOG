@@ -8,6 +8,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GuestsController;
 use App\Http\Controllers\SkinsController;
 
+use App\Http\Controllers\BillsController;
 
 use App\Http\Controllers\Admin_Page_Controller;
 
@@ -87,3 +88,7 @@ Route::get('adminPie-Page',[ChartController::class,'adminPieChart']);
 Route::post('adminSignIn',[AdminLoginPageController::class,'adminSignIn_Index'])-> name('adminSignIn');
 
 Route::post('guestSignIn',[GuestsController::class,'GuestsSignIn_Index'])->name('guestSignIn');
+Route::get('register',[GuestsController::class,'GuestRegister']);
+Route::post('register-guest',[GuestsController::class,'GuestRegister_Index'])->name('register-guest');
+
+Route::get('bills-List',[BillsController::class,'billsIndex']);

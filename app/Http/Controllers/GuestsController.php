@@ -7,6 +7,31 @@ use App\Models\guests;
 
 class GuestsController extends Controller
 {
+    public function GuestRegister(){
+        return view('GuestPage/register');
+    }
+
+    public function GuestRegister_Index(Request $request){
+        $request->validate([
+            'name'=>'required',
+            'username'=>'required|unique:guests',
+            'password'=>'required',
+            'contact'=>'required',
+        ]);
+
+        $guest = new guests();
+        $guest->guestName = $request->name;
+        $guest->guestUsername = $request->username;
+        $guest->guestPassword = $request->password;
+        $guest->guestContact = $request->contact;
+        $res = $guest->save();
+        if($res){
+            return back()->with('success','You have registered successfully');
+        } else{
+            return back()->with('fail','Something wrong!');
+        }
+    }
+
     public function GuestsLoginPageIndex(){
         return view('GuestPage/login');
     }
