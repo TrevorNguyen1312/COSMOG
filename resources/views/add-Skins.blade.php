@@ -57,7 +57,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                                 {{$message}}
                             </div>
                         @enderror
-                    </div> <br>
+                    </div>
                     <div class="md-3">
                         <label class="form-label">Price</label>
                         <input type="text" class="form-control" name="skinprice"
