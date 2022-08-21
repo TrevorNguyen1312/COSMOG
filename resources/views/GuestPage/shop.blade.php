@@ -174,7 +174,7 @@
                             <strong>{{$row->skinPrice}}</strong>
                         </p>
                     </div>
-                    <p class="card__button">Add To Cart</p>
+                    <p class="card__button">Buy Skin</p>
                 </section>
             </section>
             @endforeach

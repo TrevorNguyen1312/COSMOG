@@ -57,7 +57,10 @@ class SkinsController extends Controller
 
     public function editSkins($skinID){
         $data = skins::where('skinID','=', $skinID)->first();
-        return view('edit-Skins',compact('data'));
+        $raritydata = rarity::get();
+        $gundata = guns::get();
+        $skinsetdata = skin_sets::get();
+        return view('edit-Skins', compact('data','raritydata','gundata','skinsetdata'));
     }
 
     public function updateSkins(Request $request){
