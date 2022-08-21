@@ -15,4 +15,18 @@ class GuestsController extends Controller
         $data = guests::where('guestID','=',$id)->first();
         return view('GuestPage/information', compact('data'));
     }
+    public function login(){
+        return view('GuestPage/index');
+    }
+    public function registration(){
+        return view('GuestPage/login');
+    }
+    public function registerGuest(Request $request){
+        $request->validate([
+            'name' =>'required',
+            'contact' =>'required',
+            'username' =>'required',
+            'password' =>'required'
+        ]);
+    }
 }

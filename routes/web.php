@@ -15,6 +15,7 @@ use App\Http\Controllers\indexController;
 use App\Http\Controllers\shopController;
 use App\Http\Controllers\single_productController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\registerController;
 
 use App\Http\Controllers\AdminLoginPageController;
 
@@ -45,6 +46,10 @@ Route::get('/index',[indexController::class,'index']);
 Route::get('/shop',[shopController::class,'shop']);
 Route::get('/single_product',[single_productController::class,'single_product']);
 Route::get('/login',[loginController::class,'login']);
+Route::get('/register',[registerController::class,'register']);
+
+Route::post('/register-guest',[GuestsController::class,'registerGuest'])->name('register-guest');
+
 Route::get('/information/{id}',[GuestsController::class,'information']);
 
 
