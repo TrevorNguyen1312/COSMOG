@@ -14,22 +14,35 @@
 <div class="container">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login">
+			<form class="login" action="{{route('guestSignIn')}}" method="post">
+				@if (Session::has('success'))
+                    <div class="alert alert-success">{{Session::get('success')}}</div>
+                @endif 
+                @if (Session::has('fail'))
+                <div class="alert alert-danger">{{Session::get('fail')}}</div>
+                @endif
+                    @csrf
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="User name / Email">
+					<input type="text" class="login__input" name="username" placeholder="Username">
+					<br>
+					<span class="text-danger">@error('username') {{$message}} @enderror </span>
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password">
+					<input type="password" class="login__input" name="password" placeholder="Password">
+					<br>
+					<span class="text-danger">@error('password') {{$message}} @enderror </span>
 				</div>
 				<button class="button login__submit">
-					<span class="button__text">Log In Now</span>
+					<span class="button__text">Login Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>				
 			</form>
 			<div class="social-login">
-				<a href="{{url('/register')}}">Register</a>
+				<br>
+				<a href="{{url('/register')}}">Register |</a>
+				<a href="{{url('/index')}}">Back</a>
 			</div>
 		</div>
 		<div class="screen__background">

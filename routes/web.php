@@ -78,8 +78,6 @@ Route::get('skin_sets-List',[SkinSetsController::class,'skin_setsIndex']);
 
 Route::get('admin-List',[AdminController::class,'AdminIndex']);
 
-Route::get('guests-List',[GuestsController::class,'GuestsIndex']);
-
 Route::get('admin-Page',[Admin_Page_Controller::class,'adminIndex']);
 
 Route::get('adminLogin-Page',[AdminLoginPageController::class,'adminLoginPageIndex']);
@@ -87,3 +85,5 @@ Route::get('adminLogin-Page',[AdminLoginPageController::class,'adminLoginPageInd
 Route::get('adminPie-Page',[ChartController::class,'adminPieChart']);
 
 Route::post('adminSignIn',[AdminLoginPageController::class,'adminSignIn_Index'])-> name('adminSignIn');
+
+Route::post('guestSignIn',[GuestsController::class,'GuestsSignIn_Index'])->name('guestSignIn');

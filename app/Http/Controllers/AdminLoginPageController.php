@@ -15,10 +15,10 @@ class AdminLoginPageController extends Controller
             'username'=>'required',
             'password'=>'required'
         ]);
-        $admin = administrators::where('adminUsername','=',$request->username)->first();
-        if($admin){
-            if($request->password.'='.$admin->adminPassword){
-                $request->session()->put('adminUsername',$admin->adminUsername);
+        $data = administrators::where('adminUsername','=',$request->username)->first();
+        if($data){
+            if($request->password.'='.$data->adminPassword){
+                $request->session()->put('adminUsername',$data->adminUsername);
                 return redirect('admin-Page');
                 
             }

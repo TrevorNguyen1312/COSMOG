@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>AdminLogin</title>
+    <title>Admin Login</title>
     <link rel="icon" href="img/logowhite.png" />
     <!-- Fontfaces CSS-->
     <link href="admin-css/font-face.css" rel="stylesheet" media="all">

@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>AdminPage</title>
+    <title>Admin Page</title>
     <link rel="icon" href="img/logowhite.png" />
     <!-- Fontfaces CSS-->
     <link href="admin-css/font-face.css" rel="stylesheet" media="all">
@@ -179,20 +179,20 @@
                                             </div>
                                             <div class="mess__item">
                                                 <div class="image img-cir img-40">
-                                                    <img src="admin-images/icon/avatar-06.jpg" alt="Michelle Moreno" />
+                                                    <img src="admin-images/icon/PhanTrungKien.jpg" alt="Phan Trung Kien" />
                                                 </div>
                                                 <div class="content">
-                                                    <h6>Michelle Moreno</h6>
+                                                    <h6>Phan Trung Kien</h6>
                                                     <p>Have sent a photo</p>
                                                     <span class="time">3 min ago</span>
                                                 </div>
                                             </div>
                                             <div class="mess__item">
                                                 <div class="image img-cir img-40">
-                                                    <img src="admin-images/icon/avatar-04.jpg" alt="Diane Myers" />
+                                                    <img src="admin-images/icon/ChanhChanh.jpg" alt="Chanh Chanh" />
                                                 </div>
                                                 <div class="content">
-                                                    <h6>Diane Myers</h6>
+                                                    <h6>Chanh Chanh</h6>
                                                     <p>You are now connected on message</p>
                                                     <span class="time">Yesterday</span>
                                                 </div>
@@ -204,37 +204,30 @@
                                     </div>
                                     <div class="noti__item js-item-menu">
                                         <i class="zmdi zmdi-email"></i>
-                                        <span class="quantity">1</span>
+                                        <span class="quantity">2</span>
                                         <div class="email-dropdown js-dropdown">
                                             <div class="email__title">
-                                                <p>You have 3 New Emails</p>
+                                                <p>You have 2 New Emails</p>
                                             </div>
                                             <div class="email__item">
                                                 <div class="image img-cir img-40">
-                                                    <img src="admin-images/icon/avatar-06.jpg" alt="Cynthia Harvey" />
+                                                    <img src="admin-images/icon/ChanhChanh.jpg" alt="ChanhChanh" />
                                                 </div>
                                                 <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, 3 min ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="email__item">
-                                                <div class="image img-cir img-40">
-                                                    <img src="admin-images/icon/avatar-05.jpg" alt="Cynthia Harvey" />
-                                                </div>
-                                                <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, Yesterday</span>
+                                                    <p>Greetings</p>
+                                                    <span>Chanh Chanh, 3 min ago</span>
                                                 </div>
                                             </div>
                                             <div class="email__item">
                                                 <div class="image img-cir img-40">
-                                                    <img src="admin-images/icon/avatar-04.jpg" alt="Cynthia Harvey" />
+                                                    <img src="admin-images/icon/PhanTrungKien.jpg" alt="PhanTrungKien" />
                                                 </div>
                                                 <div class="content">
-                                                    <p>Meeting about new dashboard...</p>
-                                                    <span>Cynthia Harvey, April 12,,2018</span>
+                                                    <p>Adios</p>
+                                                    <span>Phan Trung Kien, Yesterday</span>
                                                 </div>
+                                            </div>
+                                            <div>                                
                                             </div>
                                             <div class="email__footer">
                                                 <a href="#">See all emails</a>
@@ -254,7 +247,7 @@
                                                 </div>
                                                 <div class="content">
                                                     <p>You got a email notification</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <span class="date">April 12, 2022 06:50</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__item">
@@ -263,7 +256,7 @@
                                                 </div>
                                                 <div class="content">
                                                     <p>Your account has been blocked</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <span class="date">April 12, 2022 06:50</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__item">
@@ -272,7 +265,7 @@
                                                 </div>
                                                 <div class="content">
                                                     <p>You got a new file</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <span class="date">April 12, 2022 06:50</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__footer">
@@ -284,23 +277,23 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="admin-images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="admin-images/icon/NguyenPhucThinh.jpg" alt="Nguyen Phuc Thinh" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">john doe</a>
+                                            <a class="js-acc-btn" href="#">Nguyen Phuc Thinh</a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        <img src="admin-images/icon/avatar-01.jpg" alt="John Doe" />
+                                                        <img src="admin-images/icon/NguyenPhucThinh.jpg" alt="Nguyen Phuc Thinh" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#">john doe</a>
+                                                        <a href="#">Nguyen Phuc Thinh</a>
                                                     </h5>
-                                                    <span class="email">johndoe@example.com</span>
+                                                    <span class="email">NguyenPhucThinh@example.com</span>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__body">
@@ -318,8 +311,7 @@
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <a {{url('/adminLogin-Page')}}>
-                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                                <a href="{{url('/adminLogin-Page')}}"> <i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
                                     </div>
@@ -352,8 +344,8 @@
                                                 <i class="zmdi zmdi-account-o"></i>
                                             </div>
                                             <div class="text">
-                                                <h2>10368</h2>
-                                                <span>members online</span>
+                                                <h2>10,368</h2>
+                                                <span>Members online</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -371,7 +363,7 @@
                                             </div>
                                             <div class="text">
                                                 <h2>388,688</h2>
-                                                <span>items solid</span>
+                                                <span>Items solid</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -389,7 +381,7 @@
                                             </div>
                                             <div class="text">
                                                 <h2>1,086</h2>
-                                                <span>this week</span>
+                                                <span>This week</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -407,7 +399,7 @@
                                             </div>
                                             <div class="text">
                                                 <h2>$1,060,386</h2>
-                                                <span>total earnings</span>
+                                                <span>Total earnings</span>
                                             </div>
                                         </div>
                                         <div class="overview-chart">
@@ -426,8 +418,9 @@
                                         <thead>
                                             <tr>
                                                 <th>date</th>
-                                                <th>order ID</th>
+                                                <th>ID</th>
                                                 <th>name</th>
+                                                <th>rarity</th>
                                                 <th class="text-right">price</th>
                                                 <th class="text-right">quantity</th>
                                                 <th class="text-right">total</th>
@@ -435,111 +428,119 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>2018-09-29 05:57</td>
-                                                <td>100398</td>
-                                                <td>iPhone X 64Gb Grey</td>
-                                                <td class="text-right">$999.00</td>
+                                                <td>2022-09-29 05:57</td>
+                                                <td>VA041</td>
+                                                <td>Prime Vandal</td>
+                                                <td>Premium Edition</td>
+                                                <td class="text-right">$1,775</td>
                                                 <td class="text-right">1</td>
-                                                <td class="text-right">$999.00</td>
+                                                <td class="text-right">$1,775</td>
                                             </tr>
                                             <tr>
-                                                <td>2018-09-28 01:22</td>
-                                                <td>100397</td>
-                                                <td>Samsung S8 Black</td>
-                                                <td class="text-right">$756.00</td>
+                                                <td>2022-09-28 01:22</td>
+                                                <td>PH030</td>
+                                                <td>Oni Phantom</td>
+                                                <td>Premium Edition</td>
+                                                <td class="text-right">$1,775</td>
                                                 <td class="text-right">1</td>
-                                                <td class="text-right">$756.00</td>
+                                                <td class="text-right">$1,775</td>
                                             </tr>
                                             <tr>
-                                                <td>2018-09-27 02:12</td>
-                                                <td>100396</td>
-                                                <td>Game Console Controller</td>
-                                                <td class="text-right">$22.00</td>
+                                                <td>2022-09-27 02:12</td>
+                                                <td>KN030</td>
+                                                <td>Oni Claw</td>
+                                                <td>Ultra Edition</td>
+                                                <td class="text-right">$3,550</td>
                                                 <td class="text-right">2</td>
-                                                <td class="text-right">$44.00</td>
+                                                <td class="text-right">$7,100</td>
                                             </tr>
                                             <tr>
-                                                <td>2018-09-26 23:06</td>
-                                                <td>100395</td>
-                                                <td>iPhone X 256Gb Black</td>
-                                                <td class="text-right">$1199.00</td>
+                                                <td>2022-09-26 23:06</td>
+                                                <td>KN040</td>
+                                                <td>Prime Axe</td>
+                                                <td>Ultra Edition</td>
+                                                <td class="text-right">$3,550</td>
                                                 <td class="text-right">1</td>
-                                                <td class="text-right">$1199.00</td>
+                                                <td class="text-right">$3,550</td>
                                             </tr>
                                             <tr>
-                                                <td>2018-09-25 19:03</td>
-                                                <td>100393</td>
-                                                <td>USB 3.0 Cable</td>
-                                                <td class="text-right">$10.00</td>
+                                                <td>2022-09-25 19:03</td>
+                                                <td>SH010</td>
+                                                <td>Reaver Sheriff</td>
+                                                <td>Premium Edition</td>
+                                                <td class="text-right">$1,775</td>
                                                 <td class="text-right">3</td>
-                                                <td class="text-right">$30.00</td>
+                                                <td class="text-right">$5,325</td>
                                             </tr>
                                             <tr>
-                                                <td>2018-09-29 05:57</td>
-                                                <td>100392</td>
-                                                <td>Smartwatch 4.0 LTE Wifi</td>
-                                                <td class="text-right">$199.00</td>
+                                                <td>2022-09-29 05:57</td>
+                                                <td>OP010</td>
+                                                <td>Reaver Operator</td>
+                                                <td>Premium Edition</td>
+                                                <td class="text-right">$1,775</td>
                                                 <td class="text-right">6</td>
-                                                <td class="text-right">$1494.00</td>
+                                                <td class="text-right">$10,650</td>
                                             </tr>
                                             <tr>
-                                                <td>2018-09-24 19:10</td>
-                                                <td>100391</td>
-                                                <td>Camera C430W 4k</td>
-                                                <td class="text-right">$699.00</td>
+                                                <td>2022-09-24 19:10</td>
+                                                <td>KN050</td>
+                                                <td>Glitchpop Dagger</td>
+                                                <td>Exclusive Edition</td>
+                                                <td class="text-right">$4,350</td>
                                                 <td class="text-right">1</td>
-                                                <td class="text-right">$699.00</td>
+                                                <td class="text-right">$4,350</td>
                                             </tr>
                                             <tr>
-                                                <td>2018-09-22 00:43</td>
-                                                <td>100393</td>
-                                                <td>USB 3.0 Cable</td>
-                                                <td class="text-right">$10.00</td>
+                                                <td>2022-09-22 00:43</td>
+                                                <td>KN051</td>
+                                                <td>Glitchpop Axe</td>
+                                                <td>Exclusive Edition</td>
+                                                <td class="text-right">$4,350</td>
                                                 <td class="text-right">3</td>
-                                                <td class="text-right">$30.00</td>
+                                                <td class="text-right">$13,050</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <h2 class="title-1 m-b-25">Top countries</h2>
+                                <h2 class="title-1 m-b-25">Top Items</h2>
                                 <div class="au-card au-card--bg-blue au-card-top-countries m-b-40">
                                     <div class="au-card-inner">
                                         <div class="table-responsive">
                                             <table class="table table-top-countries">
                                                 <tbody>
                                                     <tr>
-                                                        <td>United States</td>
+                                                        <td>Prime Vandal</td>
                                                         <td class="text-right">$119,366.96</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Australia</td>
+                                                        <td>Reaver Vandal</td>
                                                         <td class="text-right">$70,261.65</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>United Kingdom</td>
+                                                        <td>Reaver Operator</td>
                                                         <td class="text-right">$46,399.22</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Turkey</td>
+                                                        <td>Prime Axe</td>
                                                         <td class="text-right">$35,364.90</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Germany</td>
+                                                        <td>Glitchpop Dagger</td>
                                                         <td class="text-right">$20,366.96</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>France</td>
+                                                        <td>Oni Phantom</td>
                                                         <td class="text-right">$10,366.96</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Australia</td>
+                                                        <td>Glitchpop Axe</td>
                                                         <td class="text-right">$5,366.96</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Italy</td>
-                                                        <td class="text-right">$1639.32</td>
+                                                        <td>Reaver Sheriff</td>
+                                                        <td class="text-right">$1,639.32</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -554,20 +555,20 @@
                                     <div class="au-card-title" style="background-image:url('admin-images/bg-title-01.jpg');">
                                         <div class="bg-overlay bg-overlay--blue"></div>
                                         <h3>
-                                            <i class="zmdi zmdi-account-calendar"></i>26 April, 2018</h3>
+                                            <i class="zmdi zmdi-account-calendar"></i>26 April, 2022</h3>
                                         <button class="au-btn-plus">
                                             <i class="zmdi zmdi-plus"></i>
                                         </button>
                                     </div>
                                     <div class="au-task js-list-load">
                                         <div class="au-task__title">
-                                            <p>Tasks for John Doe</p>
+                                            <p>Tasks for Nguyen Phuc Thinh</p>
                                         </div>
                                         <div class="au-task-list js-scrollbar3">
                                             <div class="au-task__item au-task__item--danger">
                                                 <div class="au-task__item-inner">
                                                     <h5 class="task">
-                                                        <a href="#">Meeting about plan for Admin Template 2018</a>
+                                                        <a href="#">Meeting about plan for Sales </a>
                                                     </h5>
                                                     <span class="time">10:00 AM</span>
                                                 </div>
@@ -575,7 +576,7 @@
                                             <div class="au-task__item au-task__item--warning">
                                                 <div class="au-task__item-inner">
                                                     <h5 class="task">
-                                                        <a href="#">Create new task for Dashboard</a>
+                                                        <a href="#">Create new task for Chanh Chanh</a>
                                                     </h5>
                                                     <span class="time">11:00 AM</span>
                                                 </div>
@@ -583,7 +584,7 @@
                                             <div class="au-task__item au-task__item--primary">
                                                 <div class="au-task__item-inner">
                                                     <h5 class="task">
-                                                        <a href="#">Meeting about plan for Admin Template 2018</a>
+                                                        <a href="#">Meeting about plan for Advertising </a>
                                                     </h5>
                                                     <span class="time">02:00 PM</span>
                                                 </div>
@@ -591,7 +592,7 @@
                                             <div class="au-task__item au-task__item--success">
                                                 <div class="au-task__item-inner">
                                                     <h5 class="task">
-                                                        <a href="#">Create new task for Dashboard</a>
+                                                        <a href="#">Create new task for Phan Trung Kien</a>
                                                     </h5>
                                                     <span class="time">03:30 PM</span>
                                                 </div>
@@ -599,7 +600,7 @@
                                             <div class="au-task__item au-task__item--danger js-load-item">
                                                 <div class="au-task__item-inner">
                                                     <h5 class="task">
-                                                        <a href="#">Meeting about plan for Admin Template 2018</a>
+                                                        <a href="#">Meeting about plan for Marketing </a>
                                                     </h5>
                                                     <span class="time">10:00 AM</span>
                                                 </div>
@@ -607,7 +608,7 @@
                                             <div class="au-task__item au-task__item--warning js-load-item">
                                                 <div class="au-task__item-inner">
                                                     <h5 class="task">
-                                                        <a href="#">Create new task for Dashboard</a>
+                                                        <a href="#">Create new task for everyone</a>
                                                     </h5>
                                                     <span class="time">11:00 AM</span>
                                                 </div>
@@ -644,11 +645,11 @@
                                                         <div class="au-message__item-text">
                                                             <div class="avatar-wrap">
                                                                 <div class="avatar">
-                                                                    <img src="admin-images/icon/avatar-02.jpg" alt="John Smith">
+                                                                    <img src="admin-images/icon/PhanTrungKien.jpg" alt="Phan Trung Kien">
                                                                 </div>
                                                             </div>
                                                             <div class="text">
-                                                                <h5 class="name">John Smith</h5>
+                                                                <h5 class="name">Phan Trung Kien</h5>
                                                                 <p>Have sent a photo</p>
                                                             </div>
                                                         </div>
@@ -662,11 +663,11 @@
                                                         <div class="au-message__item-text">
                                                             <div class="avatar-wrap online">
                                                                 <div class="avatar">
-                                                                    <img src="admin-images/icon/avatar-03.jpg" alt="Nicholas Martinez">
+                                                                    <img src="admin-images/icon/ChanhChanh.jpg" alt="Chanh Chanh">
                                                                 </div>
                                                             </div>
                                                             <div class="text">
-                                                                <h5 class="name">Nicholas Martinez</h5>
+                                                                <h5 class="name">Chanh Chanh</h5>
                                                                 <p>You are now connected on message</p>
                                                             </div>
                                                         </div>
@@ -680,12 +681,12 @@
                                                         <div class="au-message__item-text">
                                                             <div class="avatar-wrap online">
                                                                 <div class="avatar">
-                                                                    <img src="admin-images/icon/avatar-04.jpg" alt="Michelle Sims">
+                                                                    <img src="admin-images/icon/ChanhChanh.jpg" alt="Chanh Chanh">
                                                                 </div>
                                                             </div>
                                                             <div class="text">
-                                                                <h5 class="name">Michelle Sims</h5>
-                                                                <p>Lorem ipsum dolor sit amet</p>
+                                                                <h5 class="name">Chanh Chanh</h5>
+                                                                <p>Bonjour, howdy ho</p>
                                                             </div>
                                                         </div>
                                                         <div class="au-message__item-time">
@@ -698,12 +699,12 @@
                                                         <div class="au-message__item-text">
                                                             <div class="avatar-wrap">
                                                                 <div class="avatar">
-                                                                    <img src="admin-images/icon/avatar-05.jpg" alt="Michelle Sims">
+                                                                    <img src="admin-images/icon/PhanTrungKien.jpg" alt="Phan Trung Kien">
                                                                 </div>
                                                             </div>
                                                             <div class="text">
-                                                                <h5 class="name">Michelle Sims</h5>
-                                                                <p>Purus feugiat finibus</p>
+                                                                <h5 class="name">Phan Trung Kien</h5>
+                                                                <p>Here you are, amigos</p>
                                                             </div>
                                                         </div>
                                                         <div class="au-message__item-time">
@@ -716,12 +717,12 @@
                                                         <div class="au-message__item-text">
                                                             <div class="avatar-wrap online">
                                                                 <div class="avatar">
-                                                                    <img src="admin-images/icon/avatar-04.jpg" alt="Michelle Sims">
+                                                                    <img src="admin-images/icon/PhanTrungKien.jpg" alt="Phan Trung Kien">
                                                                 </div>
                                                             </div>
                                                             <div class="text">
-                                                                <h5 class="name">Michelle Sims</h5>
-                                                                <p>Lorem ipsum dolor sit amet</p>
+                                                                <h5 class="name">Phan Trung Kien</h5>
+                                                                <p>Mr.Stark, I'm not feeling so good.</p>
                                                             </div>
                                                         </div>
                                                         <div class="au-message__item-time">
@@ -734,12 +735,12 @@
                                                         <div class="au-message__item-text">
                                                             <div class="avatar-wrap">
                                                                 <div class="avatar">
-                                                                    <img src="admin-images/icon/avatar-05.jpg" alt="Michelle Sims">
+                                                                    <img src="admin-images/icon/ChanhChanh.jpg" alt="ChanhChanh">
                                                                 </div>
                                                             </div>
                                                             <div class="text">
-                                                                <h5 class="name">Michelle Sims</h5>
-                                                                <p>Purus feugiat finibus</p>
+                                                                <h5 class="name">Chanh Chanhs</h5>
+                                                                <p>Ascendants 2</p>
                                                             </div>
                                                         </div>
                                                         <div class="au-message__item-time">
@@ -757,11 +758,11 @@
                                                 <div class="au-chat-info">
                                                     <div class="avatar-wrap online">
                                                         <div class="avatar avatar--small">
-                                                            <img src="admin-images/icon/avatar-02.jpg" alt="John Smith">
+                                                            <img src="admin-images/icon/PhanTrungKien.jpg" alt="Phan Trung Kien">
                                                         </div>
                                                     </div>
                                                     <span class="nick">
-                                                        <a href="#">John Smith</a>
+                                                        <a href="#">Phan Trung Kien</a>
                                                     </span>
                                                 </div>
                                             </div>
@@ -770,11 +771,11 @@
                                                     <span class="mess-time">12 Min ago</span>
                                                     <div class="recei-mess__inner">
                                                         <div class="avatar avatar--tiny">
-                                                            <img src="admin-images/icon/avatar-02.jpg" alt="John Smith">
+                                                            <img src="admin-images/icon/ChanhChanh.jpg" alt="Chanh Chanh">
                                                         </div>
                                                         <div class="recei-mess-list">
-                                                            <div class="recei-mess">Lorem ipsum dolor sit amet, consectetur adipiscing elit non iaculis</div>
-                                                            <div class="recei-mess">Donec tempor, sapien ac viverra</div>
+                                                            <div class="recei-mess">Pusy Poost, Cyka Blyat</div>
+                                                            <div class="recei-mess">Mark Stupinity</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -782,7 +783,7 @@
                                                     <span class="mess-time">30 Sec ago</span>
                                                     <div class="send-mess__inner">
                                                         <div class="send-mess-list">
-                                                            <div class="send-mess">Lorem ipsum dolor sit amet, consectetur adipiscing elit non iaculis</div>
+                                                            <div class="send-mess">Kien is the greatest man alive on EARTH.</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -803,7 +804,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
-                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                                    <p>© 2020 Riot Games, Inc. Riot Games, VALORANT and any associated logos are trademarks, service marks, or registered trademarks of Riot Games, Inc.</p>
                                 </div>
                             </div>
                         </div>

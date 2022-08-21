@@ -7,26 +7,25 @@ use App\Models\guests;
 
 class GuestsController extends Controller
 {
-    public function GuestsIndex(){
-        $data = guests::get();
-        return view('guests-List',compact('data'));
-    }
-    public function information($id){
-        $data = guests::where('guestID','=',$id)->first();
-        return view('GuestPage/information', compact('data'));
-    }
-    public function login(){
-        return view('GuestPage/index');
-    }
-    public function registration(){
+    public function GuestsLoginPageIndex(){
         return view('GuestPage/login');
     }
-    public function registerGuest(Request $request){
-        $request->validate([
-            'name' =>'required',
-            'contact' =>'required',
-            'username' =>'required',
-            'password' =>'required'
+    public function GuestsSignIn_Index(Request $request){
+            $request->validate([
+            'username'=>'required',
+            'password'=>'required'
         ]);
+        $data = guests::where('guestUsername','=',$request->username)->first();
+        if($data){
+            if($request->password.'='.$data->guestPassword){
+                $request->session()->put('guestUsername',$data->guestUsername);
+                return redirect('index');
+            }
+            else{
+                return back()->with('fail','Wrong password!');
+            }
+        }else{
+            return back()->with('fail','This username is not registered.');
+        }
     }
 }
