@@ -131,27 +131,6 @@
         </div>
     </div>
     <main>
-      <!-- <article> 
-    <section class="filters">
-          <h2>Filter Products</h2>
-
-          <form action="{{url('filter')}}" method="post">
-            <select class="form-control" name="skinSet" id="skinSet">
-              <option value="" disable selected>Collection</option>
-                @foreach ($skinsetdata as $row)                                
-                    <option value="{{$row->skinsetName}}">{{$row->skinsetName}}</option>
-                @endforeach
-            </select>
-
-            <select class="form-control" name="gunType" id="gunType">
-            <option value="" disable selected>Weapon</option>
-                @foreach ($gundata as $row)                                
-                    <option value="{{$row->gunID}}">{{$row->gunName}}</option>                
-                @endforeach
-            </select>
-          </form>
-        </section>
-        </article> -->
         <article class = "container">
             @foreach($data as $row) 
             <section class = "card" style = "height: 360px;">
