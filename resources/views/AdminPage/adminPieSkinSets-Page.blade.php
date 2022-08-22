@@ -8,16 +8,14 @@
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Prime',     2],
-          ['Reaver',      2],
-          ['Oni',  2],
-          ['Ion', 3],
-          ['Glitchpop',    2]
+          ['Skin Sets', 'Bills'],
+          <?php echo $chartData; ?>
+          
         ]);
 
         var options = {
-          title: 'Revenue by Skin Sets'
+          title: 'Revenue by Skin Sets',
+          is3D:true
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));

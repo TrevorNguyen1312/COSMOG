@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\guests;
+use Hash;
 
 class GuestsController extends Controller
 {
@@ -14,7 +15,7 @@ class GuestsController extends Controller
     public function GuestRegister_Index(Request $request){
         $request->validate([
             'name'=>'required',
-            'username'=>'required|unique:guests',
+            'username'=>'required',
             'password'=>'required',
             'contact'=>'required',
         ]);
@@ -22,11 +23,11 @@ class GuestsController extends Controller
         $guest = new guests();
         $guest->guestName = $request->name;
         $guest->guestUsername = $request->username;
-        $guest->guestPassword = $request->password;
+        $guest->guestPassword = Hash::make($request->password);
         $guest->guestContact = $request->contact;
         $res = $guest->save();
         if($res){
-            return back()->with('success','You have registered successfully');
+            return back()->with('success','You have registered successfully !');
         } else{
             return back()->with('fail','Something wrong!');
         }
