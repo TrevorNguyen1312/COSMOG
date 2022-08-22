@@ -35,11 +35,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
+                    
                     <div class="user-menu">
+                    @if (Session::has('guestUsername'))
+                        <ul>
+                            <li><a href="{{url('information')}}"><i class="fa fa-user-o"></i> {{Session::get('guestUsername')}}</a></li>
+                            <li><a href="{{url('logout')}}"><i class="fa fa-sign-out"></i> Logout</a></li>
+                        </ul>
+                            
+                        @else
                         <ul>
                             <li><a href="{{url('/login')}}"><i class="fa fa-user"></i>Login</a></li>
                             <li><a href="{{url('adminLogin-Page')}}"><i class="fa fa-user"></i> Admin Login</a></li>
                         </ul>
+                        
+                    @endif
                     </div>
                 </div>
                 

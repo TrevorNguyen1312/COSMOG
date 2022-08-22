@@ -48,6 +48,9 @@ Route::get('/shop',[shopController::class,'shop']);
 Route::post('/filter',[shopController::class,'filter']);
 Route::get('/single_product/{id}',[shopController::class,'single_product']);
 Route::get('/login',[loginController::class,'login']);
+Route::post('/guestSignIn',[loginController::class,'guestSignIn_Index']);
+Route::get('/logout',[loginController::class,'logout']);
+
 Route::get('/register',[registerController::class,'register']);
 
 Route::post('/register-guest',[GuestsController::class,'registerGuest'])->name('register-guest');
@@ -88,7 +91,6 @@ Route::get('adminPieSkinSets-Page',[ChartController::class,'adminPieSkinSetsChar
 
 Route::post('adminSignIn',[AdminLoginPageController::class,'adminSignIn_Index'])-> name('adminSignIn');
 
-Route::post('guestSignIn',[GuestsController::class,'GuestsSignIn_Index'])->name('guestSignIn');
 Route::get('register',[GuestsController::class,'GuestRegister']);
 Route::post('register-guest',[GuestsController::class,'GuestRegister_Index'])->name('register-guest');
 

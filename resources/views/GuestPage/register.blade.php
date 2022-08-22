@@ -82,6 +82,10 @@
                         <i class="button__icon fas fa-chevron-right"></i>
                     </button>
                 </form>
+                <div class="social-login">
+				<br>
+				<a href="{{url('/login')}}">Back</a>
+			</div>
             </div>
             <div class="screen__background">
                 <span class="screen__background__shape screen__background__shape4"></span>

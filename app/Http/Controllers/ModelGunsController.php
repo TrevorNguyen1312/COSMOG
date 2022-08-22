@@ -10,7 +10,6 @@ class ModelGunsController extends Controller
 {
     public function index(){
         $data = guns::get();
-        
         return view('guns-List',compact('data'));
     }
     public function addGuns(){

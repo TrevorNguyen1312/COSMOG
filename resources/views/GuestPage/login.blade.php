@@ -14,7 +14,7 @@
 <div class="container">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login" action="{{route('guestSignIn')}}" method="post">
+			<form class="login" action="{{URL('guestSignIn')}}" method="post">
 				@if (Session::has('success'))
                     <div class="alert alert-success">{{Session::get('success')}}</div>
                 @endif 
