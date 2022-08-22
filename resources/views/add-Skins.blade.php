@@ -72,10 +72,11 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                         <label class="form-label">Skins set</label>
                         <select name="skinset" class="form-control">
                             @foreach ($skinsetdata as $row)                                
-                                <option value="{{$row->skinsetName}}">{{$row->skinSetName}}</option>
+                                <option value="{{$row->skinSetName}}">{{$row->skinSetName}}
+                                </option>
                             @endforeach
                         </select>
-                        @error('skinrarity')
+                        @error('skinset')
                             <div class="alert alert-danger" role="alert">
                                 {{$message}}
                             </div>
