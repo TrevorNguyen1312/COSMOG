@@ -36,7 +36,7 @@ class RarityController extends Controller
     }
 
     public function editRarity($rarityID){
-        $data = rarities::where('rarityID','=', $rarityID)->first();
+        $data = rarity::where('rarityID','=', $rarityID)->first();
         return view('edit-Rarity',compact('data'));
     }
 
@@ -51,7 +51,7 @@ class RarityController extends Controller
         $rarityName = $request->rarityname;
         $rarityIcon = $request->rarityicon;
 
-        rarities::where('rarityID','=',$rarityID)->update([
+        rarity::where('rarityID','=',$rarityID)->update([
             'rarityID'=>$rarityID,
             'rarityName'=>$rarityName,
             'rarityIcon'=>$rarityIcon,

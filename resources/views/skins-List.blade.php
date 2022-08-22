@@ -48,7 +48,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                                 <td>{{$skin->skinRarity}}</td>
                                 <td>{{$skin->skinPrice}}</td>
                                 <td>{{$skin->skinSet}}</td>
-                                <td>{{$skin->skinImage}}</td>
+                                <td><img src="img/Skins/{{$skin->skinImage}}" height="55px" width="160px"></td>
                                 <td>{{$skin->gunType}}</td>
                                 <td> <a href="{{url('edit-Skins/'.$skin->skinID)}}" class ="btn btn-primary"> Edit </a> | <a href="{{url('delete-Skins/'.$skin->skinID)}}" class ="btn btn-danger"> Delete </a></td>
                             </tr>

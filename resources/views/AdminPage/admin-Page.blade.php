@@ -133,10 +133,6 @@
                                 <i class="fas fa-chart-bar"></i>Skin Sets Charts</a>
                         </li>
                         <li>
-                            <a href="{{url('adminPieGunType-Page')}}">
-                                <i class="fas fa-chart-bar"></i>Gun Type Charts</a>
-                        </li>
-                        <li>
                             <a href="{{url('skins-List')}}">
                                 <i class="fas fa-table"></i>Skins List</a>
                         </li>
@@ -280,24 +276,16 @@
                                 </div>
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
-                                        <div class="image">
-                                            <img src="admin-images/icon/NguyenPhucThinh.jpg" alt="Nguyen Phuc Thinh" />
-                                        </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">Nguyen Phuc Thinh</a>
+                                            <a class="js-acc-btn" href="#">{{Session::get('adminUsername')}}</a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
-                                                <div class="image">
-                                                    <a href="#">
-                                                        <img src="admin-images/icon/NguyenPhucThinh.jpg" alt="Nguyen Phuc Thinh" />
-                                                    </a>
-                                                </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#">Nguyen Phuc Thinh</a>
+                                                        <a href="#">{{Session::get('adminUsername')}}</a>
                                                     </h5>
-                                                    <span class="email">NguyenPhucThinh@example.com</span>
+                                                    <span class="email">{{Session::get('adminUsername')}}@gmail.com</span>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__body">

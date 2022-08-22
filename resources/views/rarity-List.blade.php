@@ -40,7 +40,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                         <tr>
                             <td>{{$rarities->rarityID}}</td>
                             <td>{{$rarities->rarityName}}</td>
-                            <td>{{$rarities->rarityIcon}}</td>
+                            <td><img src="img/Rarity/{{$rarities->rarityIcon}}"></td>
                             <td> <a href="{{url('edit-Rarity/'.$rarities->rarityID)}}" class ="btn btn-primary"> Edit </a> | <a href="{{url('delete-Rarity/'.$rarities->rarityID)}}" class ="btn btn-danger"> Delete </a></td>
                         </tr>
                         @endforeach

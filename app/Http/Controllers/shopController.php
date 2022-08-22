@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\skins;
 use App\Models\rarity;
+use App\Models\skin_sets;
+use App\Models\guns;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
@@ -28,5 +30,20 @@ class shopController extends Controller
         ->first();
         return view('GuestPage/single-product', compact('singleproduct','raritydata','data'));
     }
-    public function filter($)
+    public function filter(Request $request){
+        $skinsetdata = skin_sets::get();
+        $gundata = guns::get();
+        $data = DB::table('skins')
+        ->join('skin_sets', 'skin_sets.skinSetName')
+        ->join('guns', 'guns.gunID','guns.gunName')
+        ->select('skins.*', 'skin_sets.skinSetName', 'guns.gunName')->get();
+        if(!empty($request->skinSet)){
+            $data = skins::where('skinsetName', 'LIKE', "%" . $request->skinSet . "%")->get();
+        }
+        if(!empty($request->gunType)){
+            $data = skins::where('gunID', 'LIKE', "%" . $request->gunType . "%")->get(); 
+        }
+        $data->appends($request->all());
+        return view('filter', ['skins'=>$data],compact('skinsetdata','gundata'));
+    }
 }

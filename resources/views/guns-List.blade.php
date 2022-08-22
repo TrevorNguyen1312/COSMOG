@@ -39,7 +39,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                             
                                 <td>{{$gun->gunID}}</td>
                                 <td>{{$gun->gunName}}</td>
-                                <td>{{$gun->gunIcon}}</td>
+                                <td><img src="img/Icons/{{$gun->gunIcon}}"></td>
                                 <td> <a href="{{url('edit-Guns/'.$gun->gunID)}}" class ="btn btn-primary"> Edit </a> | <a href="{{url('delete-Guns/'.$gun->gunID)}}" class ="btn btn-danger"> Delete </a></td>
                             </tr>
                         @endforeach

@@ -126,32 +126,19 @@
     <section class="filters">
           <h2>Filter Products</h2>
 
-          <form action="{{url('filter')" method="post">
+          <form action="{{url('filter')}}" method="post">
             <select class="form-control" name="skinSet" id="skinSet">
               <option value="" disable selected>Collection</option>
-              <option value="Reaver">
                 @foreach ($skinsetdata as $row)                                
                     <option value="{{$row->skinsetName}}">{{$row->skinsetName}}</option>
                 @endforeach
-              </option>
             </select>
 
-            <select class="form-control" name="skinSet" id="skinSet">
-              <option value="">Weapon</option>
-              <option value="1">Melee <img src="img/Icons/knIcon.jpg"/></option>
-              <option value="2">Vandals <img src="img/Icons/vaIcon.jpg"/></option>
-              <option value="3">Phantoms <img src="img/Icons/phIcon.jpg"/></option>
-              <option value="4">Spectres <img src="img/Icons/spIcon.jpg"/></option>
-              <option value="5">Operators <img src="img/Icons/opIcon.jpg"/></option>
-              <option value="6">Sheriffs <img src="img/Icons/shIcon.jpg"/></option>
-            </select>
-
-            <select name="edition" id="">
-              <option value="">Edition</option>
-              <option value="deluxe">Deluxe</option>
-              <option value="premium">Premium</option>
-              <option value="ultra">Ultra</option>
-              <option value="exclusive">Exclusive</option>
+            <select class="form-control" name="gunType" id="gunType">
+            <option value="" disable selected>Weapon</option>
+                @foreach ($gundata as $row)                                
+                    <option value="{{$row->gunID}}">{{$row->gunName}}</option>                
+                @endforeach
             </select>
           </form>
         </section>

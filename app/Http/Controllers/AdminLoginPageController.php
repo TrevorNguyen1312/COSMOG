@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\administrators;
 
@@ -20,7 +20,6 @@ class AdminLoginPageController extends Controller
             if($request->password.'='.$data->adminPassword){
                 $request->session()->put('adminUsername',$data->adminUsername);
                 return redirect('admin-Page');
-                
             }
             else{
                 return back()->with('fail','Wrong password!');
