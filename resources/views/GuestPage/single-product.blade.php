@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SingleProduct</title>
-    <link rel="icon" href="img/logo.png" />
+    <link rel="icon" href="../img/logo.png" />
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,7 +75,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
-                    <h1><a href="index.html"><img src="img/logo.png"><span>  Valorant</span></a></img></h1>
+                    <h1><a href="index.html"><img src="../img/logo.png"><span>  Valorant</span></a></img></h1>
                     </div>
                 </div>
                 
@@ -127,17 +127,17 @@
       <h1>Product</h1>
       <section>
         <div class="product__carrousel">
-        <img src="img/Skins/glitchpopAxImage.png">        
+        <img src="../img/Skins/{{$singleproduct->skinImage}}">        
         </div>
         <div class="product__info">
-          <h2>Glitchpop Axe</h2>
+          <h2>{{$singleproduct->skinName}}</h2>
           <div class="product__price">
-            <img src="img/Icons/vp.png" alt="ValorantPoints.png" width=10% height=auto />
-            <p>1275</p>
+            <img src="../img/Icons/vp.png" alt="ValorantPoints.png" width=10% height=auto />
+            <p>{{$singleproduct->skinPrice}}</p>
           </div>
           <div class="product__edition">
-            <img src="img/Rarity/DE.jpg"/>
-            <p>Deluxe</p>
+          <img src="../img/Rarity/{{$data->rarityIcon}}">
+            <p>{{$data->rarityName}}</p>
           </div>
           <div>
             <button class="button" name="buy">Buy</button>
@@ -149,7 +149,7 @@
 
     <footer class="footer">
       <section class="footer__logo">
-        <img src="img/VALORANT_Logo.png" alt="VALORANT_Logo.png" width=50% height=auto>
+        <img src="../img/VALORANT_Logo.png" alt="VALORANT_Logo.png" width=50% height=auto>
         <p>© 2020 Riot Games, Inc. Riot Games, 
             VALORANT and any associated logos are trademarks, service marks, or registered trademarks of Riot Games, Inc.</p>
       </section>
@@ -158,18 +158,18 @@
               <h1>FOLLOW US</h1>
               <div class="footer__socialMedia">
                   <div>
-                      <img src="img/Footer/Instagram_Logo.png" alt="Instagram_Logo.png" width=7% height=auto>
+                      <img src="../img/Footer/Instagram_Logo.png" alt="Instagram_Logo.png" width=7% height=auto>
                       <p>/VALORANT</p>
 
-                      <img src="img/Footer/YouTube_Logo.png" alt="YouTube_Logo.png" width=7% height=auto>
+                      <img src="../img/Footer/YouTube_Logo.png" alt="YouTube_Logo.png" width=7% height=auto>
                       <p>/PlayValorant</p>
 
                   </div>
                   <div>
-                      <img src="img/Footer/Twitter_Logo.png" alt="Twitter_Logo.png" width=7% height=auto>
+                      <img src="../img/Footer/Twitter_Logo.png" alt="Twitter_Logo.png" width=7% height=auto>
                       <p>/PlayVALORANT</p>
 
-                      <img src="img/Footer/Facebook_Logo.png" alt="Facebook_Logo.png" width=7% height=auto>
+                      <img src="../img/Footer/Facebook_Logo.png" alt="Facebook_Logo.png" width=7% height=auto>
                       <p>/PlayVALORANT</p>
                   </div>
               </div>
@@ -188,7 +188,7 @@
       <section class="footer__classification">
           <h1>CLASSIFICATION</h1>
           <div>
-              <img class="classification" src="img/Footer/Classification_Teen.png" alt="Classification_Teen.png">
+              <img class="classification" src="../img/Footer/Classification_Teen.png" alt="Classification_Teen.png">
               <p>Blood <br>
                 Language <br>
                 Violence <br>

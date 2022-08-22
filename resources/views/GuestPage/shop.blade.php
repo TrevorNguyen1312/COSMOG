@@ -126,17 +126,17 @@
     <section class="filters">
           <h2>Filter Products</h2>
 
-          <form>
-            <select name="skins" skinSet="">
-              <option value="">Collection</option>
-              <option value="Reaver">Reaver</option>
-              <option value="Ion">Ion</option>
-              <option value="Oni">Oni</option>
-              <option value="Prime">Prime</option>
-              <option value="Glitchpop">Glitchpop</option>
+          <form action="{{url('filter')" method="post">
+            <select class="form-control" name="skinSet" id="skinSet">
+              <option value="" disable selected>Collection</option>
+              <option value="Reaver">
+                @foreach ($skinsetdata as $row)                                
+                    <option value="{{$row->skinsetName}}">{{$row->skinsetName}}</option>
+                @endforeach
+              </option>
             </select>
 
-            <select name="gun" id="">
+            <select class="form-control" name="skinSet" id="skinSet">
               <option value="">Weapon</option>
               <option value="1">Melee <img src="img/Icons/knIcon.jpg"/></option>
               <option value="2">Vandals <img src="img/Icons/vaIcon.jpg"/></option>
@@ -159,24 +159,24 @@
         <article class = "container">
             @foreach($data as $row) 
             <section class = "card" style = "height: 360px;">
-                <h2> 
-                    <a href="">{{$row->skinName}}</a>
-                </h2>
-                <img src="img/Skins/{{$row->skinImage}}" style="height: 110px; width: 320px"/>
-                <section class = "card__cont">
-                    <div>
-                        <img src="img/Rarity/{{$row->rarityIcon}}" width=25% height=auto/>
-                        <p>{{$row->rarityName}}</p>
-                    </div>
-                    <div>
-                        <img src="img/Icons/vp.png" class="vp" width=10% height=auto style="margin-left: 80px">
-                        <p>
-                            <strong>{{$row->skinPrice}}</strong>
-                        </p>
-                    </div>
-                    <p class="card__button">Buy Skin</p>
+                    <h2> 
+                    <a href="single_product/{{$row->skinID}}">{{$row->skinName}}</a>
+                    </h2>
+                    <img src="img/Skins/{{$row->skinImage}}" style="height: 110px; width: 320px"/>
+                    <section class = "card__cont">
+                        <div>
+                            <img src="img/Rarity/{{$row->rarityIcon}}" width=25% height=auto/>
+                            <p>{{$row->rarityName}}</p>
+                        </div>
+                        <div>
+                            <img src="img/Icons/vp.png" class="vp" width=10% height=auto style="margin-left: 80px">
+                            <p>
+                                <strong>{{$row->skinPrice}}</strong>
+                            </p>
+                        </div>
+                        <p class="card__button">Buy Skin</p>
+                    </section>
                 </section>
-            </section>
             @endforeach
         </article>
     </main>
