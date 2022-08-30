@@ -10,7 +10,7 @@
 rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container" style="margin:top:20px">
+    <div class="container" style="margin-top:20px">
         <div class="row">
             <div class ="col-md-12">
                 <h2>Edit Guns</h2>
@@ -19,7 +19,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     {{Session::get('success')}}
                 </div>
                 @endif 
-                <form method="post" action="{{url('update-gun')}}">
+                <form method="post" action="{{url('update-gun')}}" enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" name="id" value="{{$data->gunID}}">
                     <div class="md-3">
@@ -44,7 +44,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     </div>
                     <div class="md-3">
                         <label class="form-label">Icon</label>
-                        <input type="text" class="form-control" name="icon"
+                        <input type="file" class="form-control" name="icon"
                         placeholder="Input Icon"value ="{{$data->gunIcon}}">
                         @error('icon')
                             <div class="alert alert-danger" role="alert">

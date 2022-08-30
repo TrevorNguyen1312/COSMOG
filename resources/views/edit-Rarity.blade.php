@@ -19,13 +19,13 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     {{Session::get('success')}}
                 </div>
                 @endif 
-                <form method="post" action="{{url('update-rarity')}}">
+                <form method="post" action="{{url('update-rarity')}}" enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" name="rarityid" value="{{$data->rarityID}}">
                     <div class="md-3">
                         <label class="form-label">ID</label>
                         <input type="text" class="form-control" name="rarityid"
-                        placeholder="Enter ID" value ="{{$data->rarityID}}">
+                        placeholder="Enter ID" value ="{{$data->rarityID}}" readonly>
                         @error('rarityid')
                             <div class="alert alert-danger" role="alert">
                                 {{$message}}
@@ -44,7 +44,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     </div>
                     <div class="md-3">
                         <label class="form-label">Icon</label>
-                        <input type="text" class="form-control" name="rarityicon"
+                        <input type="file" class="form-control" name="rarityicon"
                         placeholder="Input Icon"value ="{{$data->rarityIcon}}">
                         @error('rarityicon')
                             <div class="alert alert-danger" role="alert">

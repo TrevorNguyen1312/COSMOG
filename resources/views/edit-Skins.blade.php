@@ -19,7 +19,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     {{Session::get('success')}}
                 </div>
                 @endif 
-                <form method="post" action="{{url('update-skins')}}">
+                <form method="post" action="{{url('update-skins')}}" enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" name="skinid" value="{{$data->skinID}}">
                     <div class="md-3">
@@ -82,7 +82,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     </div>
                     <div class="md-3">
                         <label class="form-label">Image</label>
-                        <input type="text" class="form-control" name="skinimage"
+                        <input type="file" class="form-control" name="skinimage"
                         placeholder="Enter Image" value ="{{$data->skinImage}}">
                         @error('skinimage')
                             <div class="alert alert-danger" role="alert">

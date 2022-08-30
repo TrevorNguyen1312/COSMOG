@@ -21,7 +21,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                 @endif 
 
                 
-                <form method="post" action="{{url('save-skins')}}">
+                <form method="post" action="{{url('save-skins')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="md-3">
                         <label class="form-label">ID</label>
@@ -60,7 +60,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     </div>
                     <div class="md-3">
                         <label class="form-label">Price</label>
-                        <input type="text" class="form-control" name="skinprice"
+                        <input type="number" class="form-control" name="skinprice"
                         placeholder="Enter Price" value ="{{old('skinprice')}}">
                         @error('skinprice')
                             <div class="alert alert-danger" role="alert">
@@ -84,7 +84,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     </div>
                     <div class="md-3">
                         <label class="form-label">Image</label>
-                        <input type="text" class="form-control" name="skinimage"
+                        <input type="file" class="form-control" name="skinimage"
                         placeholder="Enter Image" value ="{{old('skinimage')}}">
                         @error('skinimage')
                             <div class="alert alert-danger" role="alert">

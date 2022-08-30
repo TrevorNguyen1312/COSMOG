@@ -17,14 +17,16 @@ class RarityController extends Controller
     }
     public function saveRarity(Request $request){
         $request->validate([
-            'rarityid'=>'required',
-            'rarityname'=>'required',
+            'rarityid'=>'required|unique:rarities|max:5',
+            'rarityname'=>'required|max:20',
             'rarityicon'=>'required',
         ]);
 
         $rarityID = $request->rarityid;
         $rarityName = $request->rarityname;
-        $rarityIcon = $request->rarityicon;
+        $rarityIcon= $request->file('rarityicon')->getClientOriginalName();
+
+        $request->file('rarityicon')->move(public_path('img/Rarity'),$rarityIcon);
 
         $rarities = new rarity();
         $rarities->rarityID = $rarityID;
@@ -42,14 +44,16 @@ class RarityController extends Controller
 
     public function updateRarity(Request $request){
         $request->validate([
-            'rarityid'=>'required',
-            'rarityname'=>'required',
+            'rarityid'=>'required|max:5',
+            'rarityname'=>'required|max:20',
             'rarityicon'=>'required',
         ]);
 
         $rarityID = $request->rarityid;
         $rarityName = $request->rarityname;
-        $rarityIcon = $request->rarityicon;
+        $rarityIcon= $request->file('rarityicon')->getClientOriginalName();
+
+        $request->file('rarityicon')->move(public_path('img/Rarity'),$rarityIcon);
 
         rarity::where('rarityID','=',$rarityID)->update([
             'rarityID'=>$rarityID,

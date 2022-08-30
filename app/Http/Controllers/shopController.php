@@ -30,20 +30,15 @@ class shopController extends Controller
         ->first();
         return view('GuestPage/single-product', compact('singleproduct','raritydata','data'));
     }
-    // public function filter(Request $request){
-    //     $skinsetdata = skin_sets::get();
-    //     $gundata = guns::get();
-    //     $data = DB::table('skins')
-    //     ->join('skin_sets', 'skin_sets.skinSetName')
-    //     ->join('guns', 'guns.gunID','guns.gunName')
-    //     ->select('skins.*', 'skin_sets.skinSetName', 'guns.gunName')->get();
-    //     if(!empty($request->skinSet)){
-    //         $data = skins::where('skinsetName', 'LIKE', "%" . $request->skinSet . "%")->get();
-    //     }
-    //     if(!empty($request->gunType)){
-    //         $data = skins::where('gunID', 'LIKE', "%" . $request->gunType . "%")->get(); 
-    //     }
-    //     $data->appends($request->all());
-    //     return view('filter', ['skins'=>$data],compact('skinsetdata','gundata'));
-    // }
+    public function search(Request $request){
+        if(isset($_GET['search'])){
+            $search_text = $_GET['search'];
+            $skindata = skins::get();
+            $raritydata = rarity::get();
+            $skins = DB::table('skins')->where('skinName','LIKE', '%' .$search_text. '%')
+            ->join('rarities', 'rarities.rarityID','skins.skinRarity')
+            ->select('rarities.*','skins.*')->get();
+            return view('GuestPage/search', compact('skins', 'raritydata','skindata'));
+        }
+    }
 }

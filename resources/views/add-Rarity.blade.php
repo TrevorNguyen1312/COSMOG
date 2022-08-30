@@ -21,7 +21,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                 @endif 
 
                 
-                <form method="post" action="{{url('save-rarity')}}">
+                <form method="post" action="{{url('save-rarity')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="md-3">
                         <label class="form-label">ID</label>
@@ -45,7 +45,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                     </div>
                     <div class="md-3">
                         <label class="form-label">Icon</label>
-                        <input type="text" class="form-control" name="rarityicon"
+                        <input type="file" class="form-control" name="rarityicon"
                         placeholder="Input Icon"value ="{{old('rarityicon')}}">
                         @error('rarityicon')
                             <div class="alert alert-danger" role="alert">

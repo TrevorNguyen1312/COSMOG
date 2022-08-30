@@ -45,7 +45,7 @@ Route::get('/', function () {
 Route::get('/',[indexController::class,'index']);
 Route::get('/index',[indexController::class,'index']);
 Route::get('/shop',[shopController::class,'shop']);
-Route::post('/filter',[shopController::class,'filter']);
+Route::any('/search',[shopController::class,'search']);
 Route::get('/single_product/{id}',[shopController::class,'single_product']);
 Route::get('/login',[loginController::class,'login']);
 Route::post('/guestSignIn',[loginController::class,'guestSignIn_Index']);
@@ -57,6 +57,7 @@ Route::post('/register-guest',[GuestsController::class,'registerGuest'])->name('
 
 Route::get('/information',[GuestsController::class,'information']);
 
+Route::get('/search',[shopController::class,'search'])->name('web.search');
 
 Route::get('guns-List',[ModelGunsController::class,'index']);
 Route::get('add-Guns',[ModelGunsController::class,'addGuns']);
@@ -78,6 +79,9 @@ Route::post('save-skins',[SkinsController::class,'saveSkins']);
 Route::get('edit-Skins/{skinid}',[SkinsController::class,'editSkins']);
 Route::post('update-skins',[SkinsController::class,'updateSkins']);
 Route::get('delete-Skins/{skinid}',[SkinsController::class,'deleteSkins']);
+
+Route::get('adminsearch',[SkinsController::class,'adminsearch'])->name('web.adminsearch');
+
 
 Route::get('skin_sets-List',[SkinSetsController::class,'skin_setsIndex']);
 

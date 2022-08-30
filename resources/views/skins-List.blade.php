@@ -25,7 +25,12 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
                 <div style ="margin-right:10px; float: right;">
                     <a href="{{url('add-Skins')}}" class ="btn btn-primary">Add</a> |
                 </div>
-                
+                <form action="{{ route('web.search')}}" class="search-bar" method="get">
+            <input type="search" name="search" pattern=".*\S.*" required placeholder="Search..." autocomplete="off">
+            <button class="search-btn" type="submit">
+                <span>Search</span>
+            </button>
+        </form>
                 <table class="table">
                     <thead>
                         <tr>

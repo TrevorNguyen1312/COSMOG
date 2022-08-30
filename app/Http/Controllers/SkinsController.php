@@ -7,6 +7,7 @@ use App\Models\skins;
 use App\Models\rarity;
 use App\Models\guns;
 use App\Models\skin_sets;
+use Illuminate\Support\Facades\DB;
 
 
 
@@ -25,8 +26,8 @@ class SkinsController extends Controller
 
     public function saveSkins(Request $request){
         $request->validate([
-            'skinid'=>'required',
-            'skinname'=>'required',
+            'skinid'=>'required|unique:skins|max:5',
+            'skinname'=>'required|max:20',
             'skinrarity'=>'required',
             'skinprice'=>'required',
             'skinset'=>'required',
@@ -39,8 +40,10 @@ class SkinsController extends Controller
         $skinRarity = $request->skinrarity;
         $skinPrice = $request->skinprice;
         $skinSet = $request->skinset;
-        $skinImage = $request->skinimage;
+        $skinImage= $request->file('skinimage')->getClientOriginalName();
         $gunType = $request->guntype;
+        
+        $request->file('skinimage')->move(public_path('img/Skins'),$skinImage);
 
         $skin = new skins();
         $skin->skinID = $skinID;
@@ -65,8 +68,8 @@ class SkinsController extends Controller
 
     public function updateSkins(Request $request){
         $request->validate([
-            'skinid'=>'required',
-            'skinname'=>'required',
+            'skinid'=>'required|max:5',
+            'skinname'=>'required|max:20',
             'skinrarity'=>'required',
             'skinprice'=>'required',
             'skinset'=>'required',
@@ -79,8 +82,10 @@ class SkinsController extends Controller
         $skinRarity = $request->skinrarity;
         $skinPrice = $request->skinprice;
         $skinSet = $request->skinset;
-        $skinImage = $request->skinimage;
+        $skinImage= $request->file('skinimage')->getClientOriginalName();
         $gunType = $request->guntype;
+        
+        $request->file('skinimage')->move(public_path('img/Skins'),$skinImage);
 
         skins::where('skinID','=',$skinID)->update([
             'skinID'=>$skinID,
@@ -97,5 +102,12 @@ class SkinsController extends Controller
     public function deleteSkins($skinID){
         skins::where('skinID','=',$skinID)->delete();
         return redirect()->back()->with('success','Skin Deleted Successfully');
+    }
+    public function adminsearch(Request $request){
+        if(isset($_GET['admin_search'])){
+            $search_text = $_GET['admin_search'];
+            $skins = DB::table('skins')->where('skinName','LIKE', '%' .$search_text. '%')->get();
+            return view('adminsearch', compact('skins'));
+        }
     }
 }
