@@ -133,6 +133,10 @@
                                 <i class="fas fa-chart-bar"></i>Skin Sets Charts</a>
                         </li>
                         <li>
+                            <a href="{{url('adminBarChart-Page')}}">
+                                <i class="fas fa-chart-bar"></i>Gun Type Charts</a>
+                        </li>
+                        <li>
                             <a href="{{url('skins-List')}}">
                                 <i class="fas fa-table"></i>Skins List</a>
                         </li>

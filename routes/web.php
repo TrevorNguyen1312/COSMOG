@@ -92,6 +92,7 @@ Route::get('admin-Page',[Admin_Page_Controller::class,'adminIndex']);
 Route::get('adminLogin-Page',[AdminLoginPageController::class,'adminLoginPageIndex']);
 
 Route::get('adminPieSkinSets-Page',[ChartController::class,'adminPieSkinSetsChart']);
+Route::get('adminBarChart-Page',[ChartController::class,'adminBarSkinSetsChart']);
 
 Route::post('adminSignIn',[AdminLoginPageController::class,'adminSignIn_Index'])-> name('adminSignIn');
 
